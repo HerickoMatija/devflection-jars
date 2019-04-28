@@ -2,13 +2,17 @@ package com.devflection.jars;
 
 import com.devflection.jars.packages.first.FirstClass;
 import com.devflection.jars.packages.second.EconomyClass;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class App {
 
-    public static void main(String[] args) {
-        System.out.println("This is out sample JAR project.");
+    private static final Logger logger = LoggerFactory.getLogger(App.class);
 
-        new FirstClass().helloWorldFromTheFirstClass();
-        new EconomyClass().helloWorldFromTheEconomyClass();
+    public static void main(String[] args) {
+        logger.info("Hello from the logger! This is out sample JAR project.");
+
+        FirstClass.helloWorldFromTheFirstClass();
+        EconomyClass.helloWorldFromTheEconomyClass();
     }
 }
