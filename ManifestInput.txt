@@ -1,0 +1,2 @@
+Main-Class: com.devflection.jars.App 
+Class-path: lib/commons-lang3-3.8.1.jar lib/logback-classic-1.2.3.jar lib/logback-core-1.2.3.jar lib/slf4j-api-1.7.26.jar
