@@ -10,7 +10,7 @@ public class App {
     private static final Logger logger = LoggerFactory.getLogger(App.class);
 
     public static void main(String[] args) {
-        logger.info("Hello from the logger! This is out sample JAR project.");
+        logger.info("Hello from the logger! This is our sample JAR project.");
 
         FirstClass.helloWorldFromTheFirstClass();
         EconomyClass.helloWorldFromTheEconomyClass();
